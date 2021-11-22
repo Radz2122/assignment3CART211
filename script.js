@@ -1,33 +1,21 @@
-const menu = document.querySelector(".menu");
+// MENU OPEN/CLOSE/CLICK
 const menuItems = document.querySelectorAll(".menuItem");
 const hamburger= document.querySelector(".hamburger");
-const closeIcon= document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menuIcon");
 const sideNav = document.querySelector(".sideNav");
 const overlay = document.querySelector(".overlay");
 const menuX=document.querySelector(".menuX");
 
-// function toggleMenu() {
-//   if (menu.classList.contains("showMenu")) {
-//     menu.classList.remove("showMenu");
-//     closeIcon.style.display = "none";
-//     menuIcon.style.display = "block";
-//   } else {
-//     menu.classList.add("showMenu");
-//     closeIcon.style.display = "block";
-//     menuIcon.style.display = "none";
-//   }
-// }
-// // hamburger.addEventListener("click", toggleMenu);
-
 menuItems.forEach(menuItem => {
+  //get each item in the menu (li) and chekc if one was clicked
     menuItem.addEventListener("click", toggleHamburger);
   })
   
+  //add eventlisteners to the menu buttons and to the overlay thats greys out the backgorund
   hamburger.addEventListener("click", toggleHamburger);
   menuX.addEventListener("click", toggleHamburger);
   overlay.addEventListener("click", toggleHamburger);
   
+  //toggles the menu opening and the overlay appearing on top of the background
   function toggleHamburger() {
     overlay.classList.toggle("showOverlay");
     sideNav.classList.toggle("showNav");

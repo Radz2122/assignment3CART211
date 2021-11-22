@@ -9,6 +9,9 @@ html {
     align-content: center;
     margin: 0vh 1vw;
     text-align: justify; }
+    html body a, html body a:visited, html body a:active {
+      color: inherit;
+      text-decoration: none; }
     html body #main {
       line-height: 2em;
       color: #ABABAB;
@@ -23,6 +26,9 @@ html {
           font-family: 'Nobile', sans-serif;
           font-size: 2em;
           margin-right: 50px; }
+          html body #main header .myWebsiteName:hover {
+            cursor: pointer;
+            color: #BB86FC; }
         html body #main header .hamburger {
           position: relative;
           left: 0;
@@ -60,11 +66,8 @@ html {
             padding-top: 4rem; }
             html body #main header .sideNav .menu li {
               margin-top: 4vh; }
-              html body #main header .sideNav .menu li a, html body #main header .sideNav .menu li a:visited, html body #main header .sideNav .menu li a:active {
-                color: inherit;
-                text-decoration: none; }
-                html body #main header .sideNav .menu li a:hover, html body #main header .sideNav .menu li a:visited:hover, html body #main header .sideNav .menu li a:active:hover {
-                  color: #BB86FC; }
+              html body #main header .sideNav .menu li a:hover, html body #main header .sideNav .menu li a:visited:hover, html body #main header .sideNav .menu li a:active:hover {
+                color: #BB86FC; }
           html body #main header .sideNav .menuX {
             position: absolute;
             z-index: 100;
