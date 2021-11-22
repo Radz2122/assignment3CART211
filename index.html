@@ -5,22 +5,44 @@
    <script src="script.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>My Website</title>
+     <!-- Material Icon -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@300&family=Nobile&display=swap" rel="stylesheet">
+   
 </head>
 <body>
    <div id="main">
       <header>
-         <h1 id="myName">Radhika </h1> 
-         <h1>CART 211</h1> 
-         <nav>
-            <ul>
-               <li> <button>Home</button></li>
-               <li> <button>Page</button></li>
-               <li> <button>Page</button></li>
-            </ul>
+         <p class="myWebsiteName">Website name </p>  
+         <nav class="sideNav">
+            <ul class="menu">
+               <li><a class="menuItem" href="#">Home</a></li>
+               <li><a class="menuItem" href="#">Profile</a></li>
+               <li><a class="menuItem" href="#">About</a></li>
+               <li><a class="menuItem" href="#">Contacts</a></li>
+             </ul>
+             <button class="hamburger"onclick="toggleHamburger()">
+               <!-- onclick="toggleMenu()" -->
+               <!-- material icons https://material.io/resources/icons/ -->
+               <i class="menuIcon material-icons">menu</i>
+               <i class="closeIcon material-icons">close</i>
+             </button>
          </nav>
+         <div class="overlay"></div>
       </header>
+      <p class="intro">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare facilisis nisl
+         . Curabitur eu auctor diam. Nulla facilisi. Sed rutrum, orci nec volutpat bibendum, ligula urna
+          lobortis urna, sit amet auctor metus lorem quis eros. Nulla in eros hendrerit, fermentum dolo
+          r vitae, imperdiet eros. Donec pretium accumsan blandit. Vivamus odio mauris, blandit eget leo 
+          in, cursus rutrum ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridi
+          culus mus. Praesent sagittis nulla a faucibus dignissim. Suspendisse potenti. Aliquam molestie sit amet 
+          tellus ac blandit. Duis lobortis sagittis nibh id vulputate.
+      </p>
      
    </div>
 </body>

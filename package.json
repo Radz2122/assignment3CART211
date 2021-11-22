@@ -1,0 +1,22 @@
+{
+  "name": "finalwebsiteradhika",
+  "version": "1.0.0",
+  "description": "Final website for my CART 211 class",
+  "main": "script.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Radz2122/assignment3CART211.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Radz2122/assignment3CART211/issues"
+  },
+  "homepage": "https://github.com/Radz2122/assignment3CART211#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
