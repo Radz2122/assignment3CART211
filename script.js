@@ -5,6 +5,7 @@ const closeIcon= document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
 const sideNav = document.querySelector(".sideNav");
 const overlay = document.querySelector(".overlay");
+const menuX=document.querySelector(".menuX");
 
 // function toggleMenu() {
 //   if (menu.classList.contains("showMenu")) {
@@ -24,7 +25,7 @@ menuItems.forEach(menuItem => {
   })
   
   hamburger.addEventListener("click", toggleHamburger);
-  // menuX.addEventListener("click", toggleHamburger)
+  menuX.addEventListener("click", toggleHamburger);
   overlay.addEventListener("click", toggleHamburger);
   
   function toggleHamburger() {

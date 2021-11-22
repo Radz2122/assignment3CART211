@@ -5,80 +5,95 @@ html {
     display: flex;
     background-color: black;
     overflow: scroll;
-    color: #ABABAB;
-    font-family: 'Exo', sans-serif;
-    font-size: 1.1em;
     flex-direction: column;
     align-content: center;
     margin: 0vh 1vw;
     text-align: justify; }
-    html body #main header {
-      display: flex;
-      flex-direction: row;
-      justify-content: left;
-      align-items: center; }
-      html body #main header .myWebsiteName {
-        font-family: 'Nobile', sans-serif;
-        font-size: 2.5em;
-        margin-left: 3vw; }
-      html body #main header .hamburger {
-        position: relative;
-        left: 75vw;
-        width: 2rem;
-        height: 2rem;
-        margin-left: 0.5rem;
-        background: none;
-        border: none;
-        cursor: pointer;
-        color: #BB86FC; }
-      html body #main header .sideNav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 101;
-        background: black;
-        width: 300px;
-        height: 100vh;
-        overflow: hidden;
-        color: white;
-        /* hide the menu above the screen by default */
-        transform: translateX(100%);
-        transition: transform 0.2s ease; }
-        html body #main header .sideNav .menu {
+    html body #main {
+      line-height: 2em;
+      color: #ABABAB;
+      font-family: 'Exo', sans-serif;
+      font-size: 1.1em; }
+      html body #main header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; }
+        html body #main header .myWebsiteName {
+          font-family: 'Nobile', sans-serif;
+          font-size: 2em;
+          margin-right: 50px; }
+        html body #main header .hamburger {
+          position: relative;
+          left: 0;
+          width: 2rem;
+          height: 2rem;
+          margin-left: 0.5rem;
+          background: none;
+          border: none;
+          cursor: pointer;
+          color: #BB86FC; }
+        html body #main header .sideNav {
           position: fixed;
-          transition: transform 0.2s;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          z-index: 101;
+          background: black;
+          width: 32vw;
+          height: 100vh;
+          overflow: hidden;
+          color: white;
+          /* hide the menu above the screen by default */
+          transform: translateX(-100%);
+          transition: transform 0.2s ease; }
+          html body #main header .sideNav .menu {
+            position: fixed;
+            font-size: 1.8rem;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s;
+            z-index: 99;
+            background: black;
+            color: #ABABAB;
+            list-style: none;
+            padding-top: 4rem; }
+            html body #main header .sideNav .menu li {
+              margin-top: 4vh; }
+              html body #main header .sideNav .menu li a, html body #main header .sideNav .menu li a:visited, html body #main header .sideNav .menu li a:active {
+                color: inherit;
+                text-decoration: none; }
+                html body #main header .sideNav .menu li a:hover, html body #main header .sideNav .menu li a:visited:hover, html body #main header .sideNav .menu li a:active:hover {
+                  color: #BB86FC; }
+          html body #main header .sideNav .menuX {
+            position: absolute;
+            z-index: 100;
+            top: 2rem;
+            right: 1.5rem;
+            width: 2rem;
+            height: 2rem;
+            margin-left: 0.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: white; }
+            html body #main header .sideNav .menuX:hover {
+              color: #BB86FC; }
+        html body #main header .showNav {
+          transform: translateX(0);
+          transition: transform 0.2s ease; }
+        html body #main header .overlay {
+          position: fixed;
+          display: none;
+          z-index: 100;
           top: 0;
           left: 0;
           right: 0;
           bottom: 0;
-          z-index: 99;
-          background: #ABABAB;
-          color: white;
-          list-style: none;
-          padding-top: 4rem; }
-        html body #main header .sideNav .menuX {
-          border: none;
-          cursor: pointer;
-          color: white; }
-          html body #main header .sideNav .menuX .closeIcon {
-            display: none; }
-      html body #main header .showNav {
-        transform: translateX(-100%);
-        transition: transform 0.2s ease; }
-      html body #main header .overlay {
-        position: fixed;
-        display: none;
-        z-index: 100;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.3);
-        width: 100%;
-        height: 100vh; }
-      html body #main header .showOverlay {
-        display: block; }
-    html body #main .intro {
-      margin: 5% 15%;
-      line-height: 2em; }
+          background: rgba(0, 0, 0, 0.3);
+          width: 100%;
+          height: 100vh; }
+        html body #main header .showOverlay {
+          display: block; }
+      html body #main .intro {
+        margin: 5% 15%; }

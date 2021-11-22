@@ -6,38 +6,31 @@ html{
         display:flex;
         background-color: black;
         overflow:scroll;
-        color:#ABABAB;
-        font-family: 'Exo', sans-serif;
-        font-size: 1.1em;
         flex-direction: column;
         align-content: center;
         margin:0vh 1vw;
         text-align:justify;
 
         #main{
+          line-height: 2em;
+          color:#ABABAB;
+          font-family: 'Exo', sans-serif;
+          font-size: 1.1em;
             header{
               display: flex;
               flex-direction: row;
-              justify-content: left;
               align-items: center;
+              justify-content: space-between;
 
                 .myWebsiteName{
                   font-family: 'Nobile', sans-serif;
-                  font-size: 2.5em;
-                  margin-left:3vw;
+                  font-size: 2em;
+                  margin-right: 50px;
+              
                 }
                 .hamburger {
-                  // position: fixed;
-                  // z-index: 100;
-                  // top: 1rem;
-                  // right: 1rem;
-                  // padding: 4px;
-                  // border: black solid 1px;
-                  // background: white;
-                  // cursor: pointer;
-
                   position: relative;
-                  left:75vw;
+                  left:0;
                   width: 2rem;
                   height: 2rem;
                   margin-left: 0.5rem;
@@ -49,50 +42,61 @@ html{
                 .sideNav {
                     position: fixed;
                     top: 0;
-                    right: 0;
+                    left:0;
                     bottom: 0;
                     z-index: 101;
                     background: black;
-                    width: 300px;
+                    width: 32vw;
                     height: 100vh;
                     overflow: hidden;
                     color: white;
                     /* hide the menu above the screen by default */
-                    transform: translateX(100%);
+                    transform: translateX(-100%);
                     transition: transform 0.2s ease;
 
                     .menu {
                       position: fixed;
+                      font-size: 1.8rem;    
+                      display: flex;
+                      flex-direction: column;
                       transition: transform 0.2s;
-                      top: 0;
-                      left: 0;
-                      right: 0;
-                      bottom: 0;
                       z-index: 99;
-                      background: #ABABAB;
-                      color: white;
+                      background:black;
+                      color: #ABABAB;
                       list-style: none;
                       padding-top: 4rem;
+
+                        li{
+                          margin-top:4vh;
+                          a, a:visited, a:active{
+                            color: inherit;
+                            text-decoration: none;
+                            &:hover{
+                              color:#BB86FC;
+                            }
+                          }
+                        }
                     }
 
                     .menuX {
-                      // position: absolute;
-                      // top: 2rem;
-                      // right: 2rem;
-                      // width: 2rem;
-                      // height: 2rem;
-                      // margin-left: 0.5rem;
-                      // background: none;
+                      position: absolute;
+                      z-index: 100;
+                      top: 2rem;
+                      right: 1.5rem;
+                      width: 2rem;
+                      height: 2rem;
+                      margin-left: 0.5rem;
+                      background: none;
                       border: none;
                       cursor: pointer;
                       color: white;
-                      .closeIcon {
-                        display: none;
+                      &:hover{
+                        color:#BB86FC;
                       }
                     }
                   }
                   .showNav {
-                    transform: translateX(-100%);
+                    transform: translateX(0);
                     transition: transform 0.2s ease;
                   }
                       
@@ -113,9 +117,11 @@ html{
                     display: block;
                   }
             }
+            //END HEADER
+
+            //MAIN CONTENT START
             .intro{
               margin:5% 15%;
-              line-height: 2em;
             }
         }
     }
