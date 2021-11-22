@@ -15,8 +15,6 @@ html{
         text-align:justify;
 
         #main{
-
-
             header{
               display: flex;
               flex-direction: row;
@@ -28,64 +26,76 @@ html{
                   font-size: 2.5em;
                   margin-left:3vw;
                 }
-                nav{
-                    .sideNav {
-                        position: fixed;
-                        top: 0;
-                        right: 0;
-                        bottom: 0;
-                        z-index: 101;
-                        background: black;
-                        width: 300px;
-                        height: 100vh;
-                        overflow: hidden;
-                        color: white;
-                        /* hide the menu above the screen by default */
-                        transform: translateX(-100%);
-                        transition: transform 0.2s ease;
-                      }
-                      
-                    .menu {
-                        position: fixed;
-                        transform: translateY(-100%);
-                        transition: transform 0.2s;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                        bottom: 0;
-                        z-index: 99;
-                        background: #ABABAB;
-                        color: white;
-                        list-style: none;
-                        padding-top: 4rem;
-                      }
-                    .hamburger {
-                        // position: fixed;
-                        // z-index: 100;
-                        // top: 1rem;
-                        // right: 1rem;
-                        // padding: 4px;
-                        // border: black solid 1px;
-                        // background: white;
-                        // cursor: pointer;
+                .hamburger {
+                  // position: fixed;
+                  // z-index: 100;
+                  // top: 1rem;
+                  // right: 1rem;
+                  // padding: 4px;
+                  // border: black solid 1px;
+                  // background: white;
+                  // cursor: pointer;
 
-                        position: relative;
-                        left:75vw;
-                        width: 2rem;
-                        height: 2rem;
-                        margin-left: 0.5rem;
-                        background: none;
-                        border: none;
-                        cursor: pointer;
-                        color: #BB86FC;
-                      }
+                  position: relative;
+                  left:75vw;
+                  width: 2rem;
+                  height: 2rem;
+                  margin-left: 0.5rem;
+                  background: none;
+                  border: none;
+                  cursor: pointer;
+                  color: #BB86FC;
+                }
+                .sideNav {
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 101;
+                    background: black;
+                    width: 300px;
+                    height: 100vh;
+                    overflow: hidden;
+                    color: white;
+                    /* hide the menu above the screen by default */
+                    transform: translateX(100%);
+                    transition: transform 0.2s ease;
+
+                    .menu {
+                      position: fixed;
+                      transition: transform 0.2s;
+                      top: 0;
+                      left: 0;
+                      right: 0;
+                      bottom: 0;
+                      z-index: 99;
+                      background: #ABABAB;
+                      color: white;
+                      list-style: none;
+                      padding-top: 4rem;
+                    }
+
+                    .menuX {
+                      // position: absolute;
+                      // top: 2rem;
+                      // right: 2rem;
+                      // width: 2rem;
+                      // height: 2rem;
+                      // margin-left: 0.5rem;
+                      // background: none;
+                      border: none;
+                      cursor: pointer;
+                      color: white;
                       .closeIcon {
                         display: none;
                       }
-                      .showNav {
-                        transform: translateX(0);
-                      }
-                }
+                    }
+                  }
+                  .showNav {
+                    transform: translateX(-100%);
+                    transition: transform 0.2s ease;
+                  }
+                      
                 .overlay {
                     position: fixed;
                     display: none;
@@ -107,7 +117,6 @@ html{
               margin:5% 15%;
               line-height: 2em;
             }
-            
         }
     }
 }

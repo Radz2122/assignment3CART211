@@ -21,7 +21,17 @@ html {
         font-family: 'Nobile', sans-serif;
         font-size: 2.5em;
         margin-left: 3vw; }
-      html body #main header nav .sideNav {
+      html body #main header .hamburger {
+        position: relative;
+        left: 75vw;
+        width: 2rem;
+        height: 2rem;
+        margin-left: 0.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #BB86FC; }
+      html body #main header .sideNav {
         position: fixed;
         top: 0;
         right: 0;
@@ -33,35 +43,29 @@ html {
         overflow: hidden;
         color: white;
         /* hide the menu above the screen by default */
+        transform: translateX(100%);
+        transition: transform 0.2s ease; }
+        html body #main header .sideNav .menu {
+          position: fixed;
+          transition: transform 0.2s;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 99;
+          background: #ABABAB;
+          color: white;
+          list-style: none;
+          padding-top: 4rem; }
+        html body #main header .sideNav .menuX {
+          border: none;
+          cursor: pointer;
+          color: white; }
+          html body #main header .sideNav .menuX .closeIcon {
+            display: none; }
+      html body #main header .showNav {
         transform: translateX(-100%);
         transition: transform 0.2s ease; }
-      html body #main header nav .menu {
-        position: fixed;
-        transform: translateY(-100%);
-        transition: transform 0.2s;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 99;
-        background: #ABABAB;
-        color: white;
-        list-style: none;
-        padding-top: 4rem; }
-      html body #main header nav .hamburger {
-        position: relative;
-        left: 75vw;
-        width: 2rem;
-        height: 2rem;
-        margin-left: 0.5rem;
-        background: none;
-        border: none;
-        cursor: pointer;
-        color: #BB86FC; }
-      html body #main header nav .closeIcon {
-        display: none; }
-      html body #main header nav .showNav {
-        transform: translateX(0); }
       html body #main header .overlay {
         position: fixed;
         display: none;

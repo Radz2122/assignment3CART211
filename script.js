@@ -19,15 +19,15 @@ const overlay = document.querySelector(".overlay");
 // }
 // // hamburger.addEventListener("click", toggleMenu);
 
-// menuItems.forEach(menuItem => {
-//     menuItem.addEventListener("click", toggleHamburger);
-//   })
+menuItems.forEach(menuItem => {
+    menuItem.addEventListener("click", toggleHamburger);
+  })
   
-//   // hamburger.addEventListener("click", toggleHamburger);
-// //   menuX.addEventListener("click", toggleHamburger)
-//   // overlay.addEventListener("click", toggleHamburger);
+  hamburger.addEventListener("click", toggleHamburger);
+  // menuX.addEventListener("click", toggleHamburger)
+  overlay.addEventListener("click", toggleHamburger);
   
-//   function toggleHamburger() {
-//     overlay.classList.toggle("showOverlay");
-//     sideNav.classList.toggle("showNav");
-//   }
+  function toggleHamburger() {
+    overlay.classList.toggle("showOverlay");
+    sideNav.classList.toggle("showNav");
+  }

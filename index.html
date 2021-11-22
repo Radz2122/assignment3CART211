@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
    <meta charset="UTF-8">
-   <script src="script.js"></script>
+  
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
@@ -18,21 +18,24 @@
    <div id="main">
       <header>
          <p class="myWebsiteName">Website name </p>  
+         <button class="hamburger">
+            <!-- material icons https://material.io/resources/icons/ -->
+            <i class="menuIcon material-icons">menu</i>
+          </button>
+         <div class="overlay"></div>
          <nav class="sideNav">
+            <button class="menuX">
+               <i class="closeIcon material-icons">close</i>
+             </button>
             <ul class="menu">
                <li><a class="menuItem" href="#">Home</a></li>
                <li><a class="menuItem" href="#">Profile</a></li>
                <li><a class="menuItem" href="#">About</a></li>
                <li><a class="menuItem" href="#">Contacts</a></li>
              </ul>
-             <button class="hamburger"onclick="toggleHamburger()">
-               <!-- onclick="toggleMenu()" -->
-               <!-- material icons https://material.io/resources/icons/ -->
-               <i class="menuIcon material-icons">menu</i>
-               <i class="closeIcon material-icons">close</i>
-             </button>
+          
          </nav>
-         <div class="overlay"></div>
+         
       </header>
       <p class="intro">
          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare facilisis nisl
@@ -46,5 +49,5 @@
      
    </div>
 </body>
-
+<script src="script.js"></script>
 </html>
