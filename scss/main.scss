@@ -99,6 +99,7 @@ html{
                     }
                   }
                   .showNav {
+                    // make the menu appear form the left
                     transform: translateX(0);
                     transition: transform 0.2s ease;
                   }
