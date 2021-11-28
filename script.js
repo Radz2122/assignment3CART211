@@ -5,6 +5,13 @@ const sideNav = document.querySelector(".sideNav");
 const overlay = document.querySelector(".overlay");
 const menuX=document.querySelector(".menuX");
 
+//LIGHTBOX
+// lb= lightbox
+const lbImgs= document.querySelectorAll(".artworkImg");
+lbImgs.forEach(lbImg => {
+  lbImg.addEventListener("click",activateLb);
+})
+
 
 
 menuItems.forEach(menuItem => {
@@ -21,6 +28,11 @@ menuItems.forEach(menuItem => {
   function toggleHamburger() {
     overlay.classList.toggle("showOverlay");
     sideNav.classList.toggle("showNav");
+  }
+
+  //function that controls my lightbox
+  function activateLb(){
+    console.log("hey");
   }
 
 

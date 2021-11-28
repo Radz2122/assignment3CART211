@@ -50,6 +50,7 @@ html {
           height: 100vh;
           overflow: hidden;
           color: white;
+          border-right: 1px solid #BB86FC;
           /* hide the menu above the screen by default */
           transform: translateX(-100%);
           transition: transform 0.2s ease; }
@@ -93,8 +94,8 @@ html {
           left: 0;
           right: 0;
           bottom: 0;
-          background: #ABABAB;
-          opacity: 0.2;
+          background: black;
+          opacity: 0.5;
           width: 100%;
           height: 100vh; }
         html body #main header .showOverlay {
@@ -103,10 +104,41 @@ html {
         margin: 5% 15%; }
       html body #main section {
         margin: 5% 15%; }
-        html body #main section .artworkImg {
-          width: 300px;
-          height: 400px;
-          filter: grayscale(100%); }
-          html body #main section .artworkImg:hover {
-            filter: grayscale(0%);
-            cursor: pointer; }
+        html body #main section .gallery {
+          justify-content: center;
+          background: black;
+          margin-top: 5%;
+          padding-bottom: 3vh;
+          /* customizing big buttons */
+          /* customizing arrow color */ }
+          html body #main section .gallery .gallery-cell {
+            width: 35%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            html body #main section .gallery .gallery-cell .artworkImg {
+              width: 300px;
+              height: 400px;
+              filter: grayscale(100%);
+              transform: scale(0.7); }
+          html body #main section .gallery .gallery-cell.is-selected .artworkImg {
+            transition: transform ease-in-out;
+            transform: scale(1); }
+            html body #main section .gallery .gallery-cell.is-selected .artworkImg:hover {
+              filter: grayscale(0%);
+              cursor: pointer; }
+          html body #main section .gallery .flickity-page-dots .dot {
+            width: 10px;
+            height: 10px;
+            background: grey; }
+          html body #main section .gallery .flickity-page-dots .dot.is-selected {
+            background: #BB86FC; }
+          html body #main section .gallery .flickity-prev-next-button {
+            width: 75px;
+            height: 75px;
+            background: transparent; }
+          html body #main section .gallery .flickity-prev-next-button .arrow {
+            fill: #BB86FC; }
+          html body #main section .gallery .flickity-prev-next-button.no-svg {
+            color: #2E2E2E; }
