@@ -5,6 +5,8 @@ const sideNav = document.querySelector(".sideNav");
 const overlay = document.querySelector(".overlay");
 const menuX=document.querySelector(".menuX");
 
+
+
 menuItems.forEach(menuItem => {
   //get each item in the menu (li) and chekc if one was clicked
     menuItem.addEventListener("click", toggleHamburger);
@@ -20,3 +22,5 @@ menuItems.forEach(menuItem => {
     overlay.classList.toggle("showOverlay");
     sideNav.classList.toggle("showNav");
   }
+
+
