@@ -135,15 +135,31 @@ html{
             }
 
             //POPUP
+            .overlayPopUp{
+              position: fixed;
+              display: none;
+              z-index: 998;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background: black;
+              opacity: 0.5;
+              width: 100%;
+              height: 100vh;
+            }
+            .showOverlay {
+              display: block;
+            }
             .popUp{
               display: none;
               justify-content: center;
               align-items: center;
-              background-color:rgba(33, 33, 33,1);
+              background-color:rgba(33, 33, 33,0.95);
               padding:2%;
               position: fixed;
               overflow: auto;
-              top:0;
+              top:25px;
               left: 15%;
               z-index: 999;
               width:70vw;

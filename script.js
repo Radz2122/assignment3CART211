@@ -50,6 +50,8 @@ galleryCells.forEach(galleryCell => {
 const popUps = document.querySelectorAll(".popUp");
 const names = document.querySelectorAll("h3");
 const popUpNames = document.querySelectorAll("h2");
+const overlayPopUp=document.querySelector(".overlayPopUp");
+const closeButtons=document.querySelectorAll(".close");
 
 names.forEach(name => {
   name.addEventListener("click", function (evt) {
@@ -71,6 +73,19 @@ names.forEach(name => {
           while (!parent.classList.contains('popUp')) {
             parent = parent.parentNode;
             parent.classList.toggle("show");
+            overlayPopUp.classList.toggle("showOverlay");
+            //verify if the user lcicks outside the popup to close it and remove the overlay
+            overlayPopUp.addEventListener("click", function(){
+              overlayPopUp.classList.remove("showOverlay");
+              parent.classList.remove("show");
+            });
+            //do the same for when the user clicks the X button to close the popup
+            closeButtons.forEach(closeButton => {
+              closeButton.addEventListener("click", function(){
+                overlayPopUp.classList.remove("showOverlay");
+                parent.classList.remove("show");
+              })
+            });
             // console.log(parent);
           }
         }
@@ -79,6 +94,7 @@ names.forEach(name => {
 
   })
 });
+
 
 
 
