@@ -5,15 +5,6 @@ const sideNav = document.querySelector(".sideNav");
 const overlay = document.querySelector(".overlay");
 const menuX=document.querySelector(".menuX");
 
-//LIGHTBOX
-// lb= lightbox
-const lbImgs= document.querySelectorAll(".artworkImg");
-lbImgs.forEach(lbImg => {
-  lbImg.addEventListener("click",activateLb);
-})
-
-
-
 menuItems.forEach(menuItem => {
   //get each item in the menu (li) and chekc if one was clicked
     menuItem.addEventListener("click", toggleHamburger);
@@ -30,9 +21,33 @@ menuItems.forEach(menuItem => {
     sideNav.classList.toggle("showNav");
   }
 
-  //function that controls my lightbox
-  function activateLb(){
-    console.log("hey");
-  }
+//LIGHTBOX OPEN/CLOSE
+// lb= lightbox
+const lbImgs= document.querySelectorAll(".artworkImg");
+
+//since the classes (.is-selectted in this case) are passed onto the cells 
+//and not on the images directly i have to select the cells as well
+const galleryCells= document.querySelectorAll(".gallery-cell");
+
+galleryCells.forEach(galleryCell => {
+  //checking if the user is currently on the cell/image to let them click it
+    galleryCell.addEventListener("click",function(){
+      if(galleryCell.classList.contains('is-selected')){
+        // galleryCell.className="";
+        //selecting the image that is the direct child of the gallery cell
+        const artImg=galleryCell.childNodes[0];
+        // artImg.style.display="none";
+        // artImg.className="";
+        // artImg.classList.add('lightboxAnim');
+        // console.log(artImg.classList.contains('lightboxAnim'));
+        console.log("hey");
+      }
+    });  
+})
+
+
+
+
+ 
 
 

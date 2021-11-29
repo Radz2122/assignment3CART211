@@ -20,8 +20,7 @@ html {
       html body #main header {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between; }
+        justify-content: flex-end; }
         html body #main header .myWebsiteName {
           font-family: 'Nobile', sans-serif;
           font-size: 2em;
@@ -30,8 +29,9 @@ html {
             cursor: pointer;
             color: #BB86FC; }
         html body #main header .hamburger {
-          position: relative;
+          position: fixed;
           left: 0;
+          margin-top: 20px;
           width: 2rem;
           height: 2rem;
           margin-left: 0.5rem;
