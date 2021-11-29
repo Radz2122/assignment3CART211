@@ -108,26 +108,30 @@ html {
           justify-content: center;
           background: black;
           margin-top: 5%;
-          padding-bottom: 3vh;
           /* customizing big buttons */
           /* customizing arrow color */ }
           html body #main section .gallery .gallery-cell {
             width: 35%;
-            height: 400px;
+            height: 500px;
             display: flex;
             justify-content: center;
-            align-items: center; }
+            align-items: center;
+            flex-direction: column; }
             html body #main section .gallery .gallery-cell .artworkImg {
               width: 300px;
               height: 400px;
               filter: grayscale(100%);
               transform: scale(0.7); }
+            html body #main section .gallery .gallery-cell h3 {
+              margin-top: -40px; }
           html body #main section .gallery .gallery-cell.is-selected .artworkImg {
             transition: transform ease-in-out;
             transform: scale(1); }
             html body #main section .gallery .gallery-cell.is-selected .artworkImg:hover {
               filter: grayscale(0%);
               cursor: pointer; }
+          html body #main section .gallery .gallery-cell.is-selected h3 {
+            margin-top: 20px; }
           html body #main section .gallery .flickity-page-dots .dot {
             width: 10px;
             height: 10px;
