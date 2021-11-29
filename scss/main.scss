@@ -136,11 +136,11 @@ html{
 
             //POPUP
             .popUp{
-              display: block;
+              display: none;
             }
 
-          .hide{
-            display: none;
+          .show{
+            display: block;
           }
             //IN SECTIONS
             section{

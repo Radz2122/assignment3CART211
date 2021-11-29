@@ -103,9 +103,9 @@ html {
       html body #main .intro {
         margin: 5% 15%; }
       html body #main .popUp {
-        display: block; }
-      html body #main .hide {
         display: none; }
+      html body #main .show {
+        display: block; }
       html body #main section {
         margin: 5% 15%; }
         html body #main section .gallery {
