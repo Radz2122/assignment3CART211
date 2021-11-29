@@ -46,6 +46,7 @@ galleryCells.forEach(galleryCell => {
 })
 
 //POPUP WITH ARTIST INFOS
+//everything here is my original code
 const popUps = document.querySelectorAll(".popUp");
 const names = document.querySelectorAll("h3");
 const popUpNames = document.querySelectorAll("h2");
@@ -60,8 +61,9 @@ names.forEach(name => {
     }
     if (nameParent.classList.contains('is-selected')) {
       console.log("YES");
-      popUpNames.forEach(popUpName => {
 
+      popUpNames.forEach(popUpName => {
+        //verify if what the user clicked on corresponds to one of the popUps
         if (popUpName.innerHTML === evt.target.innerHTML) {
           let parent = popUpName.parentNode;
 

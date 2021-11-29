@@ -137,11 +137,56 @@ html{
             //POPUP
             .popUp{
               display: none;
+              justify-content: center;
+              align-items: center;
+              background-color:rgba(33, 33, 33,1);
+              padding:2%;
+              position: fixed;
+              overflow: auto;
+              top:0;
+              left: 15%;
+              z-index: 999;
+              width:70vw;
+
+              .content{
+                display: flex;
+                flex-direction: column;
+                h2{
+                  color:#BB86FC;
+                }
+                .opinionTitle{
+                  font-weight: bold;
+                  margin-top: 15px;
+                }
+                .opinion{
+                  margin-left: 2%;
+                }
+                .rating{
+                  margin-left: 2%;
+                  font-weight: bold;
+                  margin-top: 15px;
+                  color:#BB86FC;
+                }
+              }
+              .close{
+                // display: flex;
+                position: absolute;
+                display: inline;
+                right: 0;
+                top:0;
+                margin-top: 1%;
+                margin-right: 1%;
+                font-size: 3em;
+                &:hover{
+                  cursor: pointer;
+                  color:#BB86FC;
+                }
+              }
             }
 
-          .show{
+           .show{
             display: block;
-          }
+           }
             //IN SECTIONS
             section{
               margin:5% 15%;
