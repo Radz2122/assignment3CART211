@@ -133,6 +133,15 @@ html{
             .intro{
               margin:5% 15%;
             }
+
+            //POPUP
+            .popUp{
+              display: block;
+            }
+
+          .hide{
+            display: none;
+          }
             //IN SECTIONS
             section{
               margin:5% 15%;
@@ -159,6 +168,10 @@ html{
                   } 
                   h3{
                     margin-top: -40px;
+                    &:hover{
+                      cursor: pointer;
+                      color:#BB86FC;
+                    }
                   }
                 }
                 .gallery-cell.is-selected {

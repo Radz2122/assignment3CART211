@@ -45,8 +45,18 @@ galleryCells.forEach(galleryCell => {
     });  
 })
 
+//POPUP WITH ARTIST INFOS
+const popUps=document.querySelectorAll("popUp");
+const names= document.querySelectorAll("h3");
+names.forEach(name => {
+  name.addEventListener("click",toggleOpen)});
 
 
+
+  function toggleOpen(){
+    
+    console.log("heyyyyyyy");
+  }
 
  
 

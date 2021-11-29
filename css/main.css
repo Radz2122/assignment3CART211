@@ -102,6 +102,10 @@ html {
           display: block; }
       html body #main .intro {
         margin: 5% 15%; }
+      html body #main .popUp {
+        display: block; }
+      html body #main .hide {
+        display: none; }
       html body #main section {
         margin: 5% 15%; }
         html body #main section .gallery {
@@ -124,6 +128,9 @@ html {
               transform: scale(0.7); }
             html body #main section .gallery .gallery-cell h3 {
               margin-top: -40px; }
+              html body #main section .gallery .gallery-cell h3:hover {
+                cursor: pointer;
+                color: #BB86FC; }
           html body #main section .gallery .gallery-cell.is-selected .artworkImg {
             transition: transform ease-in-out;
             transform: scale(1); }
