@@ -27,22 +27,18 @@ const lbImgs = document.querySelectorAll(".artworkImg");
 
 //since the classes (.is-selectted in this case) are passed onto the cells 
 //and not on the images directly i have to select the cells as well
-const galleryCells = document.querySelectorAll(".gallery-cell");
+// const galleryCells = document.querySelectorAll(".gallery-cell");
 
-galleryCells.forEach(galleryCell => {
+lbImgs.forEach(lbImg => {
+  console.log(lbImg.classList.contains('is-selected'));
+  // if (galleryCell.classList.contains('is-selected')) {
   //checking if the user is currently on the cell/image to let them click it
-  galleryCell.addEventListener("click", function () {
-    if (galleryCell.classList.contains('is-selected')) {
-      // galleryCell.className="";
-      //selecting the image that is the direct child of the gallery cell
-      const artImg = galleryCell.childNodes[0];
-      // artImg.style.display="none";
-      // artImg.className="";
-      // artImg.classList.add('lightboxAnim');
-      // console.log(artImg.classList.contains('lightboxAnim'));
-      // console.log("hey");
-    }
+  lbImg.addEventListener("click", function(evt) {
+    let imgSlected= evt.target;
+    //open the original img in a new tab
+    window.open(imgSlected.src, '_blank');
   });
+// }
 })
 
 //POPUP WITH ARTIST INFOS
@@ -62,7 +58,6 @@ names.forEach(name => {
       nameParent = nameParent.parentNode;
     }
     if (nameParent.classList.contains('is-selected')) {
-      console.log("YES");
 
       popUpNames.forEach(popUpName => {
         //verify if what the user clicked on corresponds to one of the popUps
@@ -74,7 +69,7 @@ names.forEach(name => {
             parent = parent.parentNode;
             parent.classList.toggle("show");
             overlayPopUp.classList.toggle("showOverlay");
-            //verify if the user lcicks outside the popup to close it and remove the overlay
+            //verify if the user clicks outside the popup to close it and remove the overlay
             overlayPopUp.addEventListener("click", function(){
               overlayPopUp.classList.remove("showOverlay");
               parent.classList.remove("show");
