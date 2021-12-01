@@ -136,6 +136,8 @@ html {
           html body #main .popUp .content .opinionTitle {
             font-weight: bold;
             margin-top: 15px; }
+          html body #main .popUp .content .desc a {
+            color: #BB86FC; }
           html body #main .popUp .content .opinion {
             margin-left: 2%; }
           html body #main .popUp .content .rating {
