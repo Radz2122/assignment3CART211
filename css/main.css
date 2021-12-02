@@ -9,29 +9,32 @@ html {
     align-content: center;
     margin: 0vh 1vw;
     text-align: justify; }
-    html body a, html body a:visited, html body a:active {
+    html body a,
+    html body a:visited,
+    html body a:active {
       color: inherit;
       text-decoration: none; }
     html body footer {
-      color: #ABABAB; }
+      color: #ababab;
+      font-size: 0.8em; }
       html body footer .author {
         text-align: center; }
     html body #main {
       line-height: 2em;
-      color: #ABABAB;
-      font-family: 'Exo', sans-serif;
+      color: #ababab;
+      font-family: "Exo", sans-serif;
       font-size: 1.1em; }
       html body #main header {
         display: flex;
         flex-direction: row;
         justify-content: flex-end; }
         html body #main header .myWebsiteName {
-          font-family: 'Nobile', sans-serif;
+          font-family: "Nobile", sans-serif;
           font-size: 2em;
           margin-right: 50px; }
           html body #main header .myWebsiteName:hover {
             cursor: pointer;
-            color: #BB86FC; }
+            color: #bb86fc; }
         html body #main header .hamburger {
           position: fixed;
           left: 0;
@@ -42,7 +45,7 @@ html {
           background: none;
           border: none;
           cursor: pointer;
-          color: #BB86FC; }
+          color: #bb86fc; }
         html body #main header .sideNav {
           position: fixed;
           top: 0;
@@ -54,7 +57,7 @@ html {
           height: 100vh;
           overflow: hidden;
           color: white;
-          border-right: 1px solid #BB86FC;
+          border-right: 1px solid #bb86fc;
           /* hide the menu above the screen by default */
           transform: translateX(-100%);
           transition: transform 0.2s ease; }
@@ -66,13 +69,13 @@ html {
             transition: transform 0.2s;
             z-index: 99;
             background: black;
-            color: #ABABAB;
+            color: #ababab;
             list-style: none;
             padding-top: 4rem; }
             html body #main header .sideNav .menu li {
               margin-top: 4vh; }
               html body #main header .sideNav .menu li a:hover {
-                color: #BB86FC; }
+                color: #bb86fc; }
           html body #main header .sideNav .menuX {
             position: absolute;
             z-index: 100;
@@ -86,7 +89,7 @@ html {
             cursor: pointer;
             color: white; }
             html body #main header .sideNav .menuX:hover {
-              color: #BB86FC; }
+              color: #bb86fc; }
         html body #main header .showNav {
           transform: translateX(0);
           transition: transform 0.2s ease; }
@@ -137,21 +140,21 @@ html {
           display: flex;
           flex-direction: column; }
           html body #main .popUp .content h2 {
-            color: #BB86FC; }
+            color: #bb86fc; }
           html body #main .popUp .content .opinionTitle {
             font-weight: bold;
             margin-top: 15px; }
           html body #main .popUp .content .desc a {
-            color: #BB86FC; }
+            color: #bb86fc; }
           html body #main .popUp .content a {
-            color: #BB86FC; }
+            color: #bb86fc; }
           html body #main .popUp .content .opinion {
             margin-left: 2%; }
           html body #main .popUp .content .rating {
             margin-left: 2%;
             font-weight: bold;
             margin-top: 15px;
-            color: #BB86FC; }
+            color: #bb86fc; }
         html body #main .popUp .close {
           position: absolute;
           display: inline;
@@ -162,7 +165,7 @@ html {
           font-size: 3em; }
           html body #main .popUp .close:hover {
             cursor: pointer;
-            color: #BB86FC; }
+            color: #bb86fc; }
       html body #main .show {
         display: block; }
       html body #main section {
@@ -191,7 +194,7 @@ html {
               margin-top: -40px; }
               html body #main section .gallery .gallery-cell h3:hover {
                 cursor: pointer;
-                color: #BB86FC; }
+                color: #bb86fc; }
           html body #main section .gallery .gallery-cell.is-selected .artworkImg {
             transition: transform ease-in-out;
             transform: scale(1); }
@@ -205,12 +208,12 @@ html {
             height: 10px;
             background: grey; }
           html body #main section .gallery .flickity-page-dots .dot.is-selected {
-            background: #BB86FC; }
+            background: #bb86fc; }
           html body #main section .gallery .flickity-prev-next-button {
             width: 75px;
             height: 75px;
             background: transparent; }
           html body #main section .gallery .flickity-prev-next-button .arrow {
-            fill: #BB86FC; }
+            fill: #bb86fc; }
           html body #main section .gallery .flickity-prev-next-button.no-svg {
-            color: #2E2E2E; }
+            color: #2e2e2e; }

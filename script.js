@@ -12,11 +12,11 @@ const overlay = document.querySelector(".overlay");
 const menuX = document.querySelector(".menuX");
 
 menuItems.forEach(menuItem => {
-  //get each item in the menu (li) and chekc if one was clicked
+  //get each item in the menu (li) and check if one was clicked
   menuItem.addEventListener("click", toggleMenu);
 })
 
-//add eventlisteners to the menu buttons and to the overlay thats greys out the backgorund
+//add eventlisteners to the menu buttons and to the overlay thats greys out the background
 hamburger.addEventListener("click", toggleMenu);
 menuX.addEventListener("click", toggleMenu);
 overlay.addEventListener("click", toggleMenu);
@@ -31,23 +31,17 @@ function toggleMenu() {
 // lb= lightbox
 const lbImgs = document.querySelectorAll(".artworkImg");
 
-//since the classes (.is-selectted in this case) are passed onto the cells 
-//and not on the images directly i have to select the cells as well
-// const galleryCells = document.querySelectorAll(".gallery-cell");
 
 lbImgs.forEach(lbImg => {
   console.log(lbImg.classList.contains('is-selected'));
-  // if (galleryCell.classList.contains('is-selected')) {
-  //checking if the user is currently on the cell/image to let them click it
   lbImg.addEventListener("click", function(evt) {
     let imgSlected= evt.target;
     //open the original img in a new tab
     window.open(imgSlected.src, '_blank');
   });
-// }
 })
 
-//As for the caroussel, I used a library called flickity and customized it to fit my website's look. I also added a few functions to it that you will find below.
+//As for the carousel, I used a library called flickity and customized it to fit my website's look. I also added a few functions to it that you will find below.
 
 //POPUP WITH ARTIST INFOS
 //everything here is my original code
@@ -61,7 +55,7 @@ names.forEach(name => {
   name.addEventListener("click", function (evt) {
     let nameParent = name.parentNode;
     //go up in the parent until the gallery is found, once it is, verify if it has the class is-selected
-    //this is allow the user to open the popup only if they're on the artist's image on the carrousel
+    //this is allow the user to open the popup only if they're on the artist's image on the carousel
     while (!nameParent.classList.contains('gallery-cell')) {
       nameParent = nameParent.parentNode;
     }
