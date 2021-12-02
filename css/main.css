@@ -101,7 +101,8 @@ html {
         html body #main header .showOverlay {
           display: block; }
       html body #main .intro {
-        margin: 5% 15%; }
+        margin: 5% 15%;
+        font-size: 1.3em; }
       html body #main .overlayPopUp {
         position: fixed;
         display: none;
@@ -137,6 +138,8 @@ html {
             font-weight: bold;
             margin-top: 15px; }
           html body #main .popUp .content .desc a {
+            color: #BB86FC; }
+          html body #main .popUp .content a {
             color: #BB86FC; }
           html body #main .popUp .content .opinion {
             margin-left: 2%; }
@@ -178,6 +181,8 @@ html {
               height: 400px;
               filter: grayscale(100%);
               transform: scale(0.7); }
+            html body #main section .gallery .gallery-cell #lvlImg {
+              object-fit: cover; }
             html body #main section .gallery .gallery-cell h3 {
               margin-top: -40px; }
               html body #main section .gallery .gallery-cell h3:hover {

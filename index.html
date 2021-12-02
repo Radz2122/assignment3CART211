@@ -32,16 +32,17 @@
                <i class="closeIcon material-icons">close</i>
             </button>
             <ul class="menu">
-               <li><a class="menuItem" href="#">Home</a></li>
-               <li><a class="menuItem" href="#">Profile</a></li>
-               <li><a class="menuItem" href="#">About</a></li>
-               <li><a class="menuItem" href="#">Contacts</a></li>
+               <li><a class="menuItem" href="#intro">Intro</a></li>
+               <li><a class="menuItem" href="#step1">How it started</a></li>
+               <li><a class="menuItem" href="#step2">YouTube</a></li>
+               <li><a class="menuItem" href="#step3">Mangas</a></li>
+               <li><a class="menuItem" href="#step4">Video games</a></li>
             </ul>
 
          </nav>
 
       </header>
-      <p class="intro">
+      <p class="intro" id="intro">
          Welcome, this is my final website for my class CART211, Creative Computing and Network Culture. Scroll down to
          follow me through my art discovery journey.
          Each and every artist you will see below has inspired me during the development of my own art practice and I've
@@ -50,7 +51,7 @@
          on their overall work. Have fun exploring! :)
       </p>
 
-      <!-- ARTISTS INFO -->
+      <!-- ARTISTS INFO, MOST OF THE DESCRIPTIONS WERE TAKEN FROM WIKIPEDIA AND ARE NOT MINE-->
       <!-- COMIC ARTISTS PPOPUPS -->
       <div class="overlayPopUp"></div>
       <div class="popUp">
@@ -92,6 +93,39 @@
          </div>
       </div>
 
+      <!-- YOUTUBERS POPUPS -->
+      <div class="popUp">
+         <span class="close">&times;</span>
+         <div class="content">
+            <h2>Domics</h2>
+            <div class="desc">Dominic "Dom" Panganiban ,more known as Domics, is a Filipino-born Canadian YouTuber, animator, and cartoonist. Panganiban generally posts story-time animations in which he tells a story about his life, an aspect of it, or his thoughts.</div>
+            <div class="opinion"> Domics is the first ever animation Youtuber I've watched. I discovered him by chance while browsing through videos. His work has always lifted my mood or made me smile because of his humorous take on his animations. In terms of art, the characters in his videos look simple, but as of late, they've become complex in terms of cinematography. The angles in the videos are wider and the animations are smoother. If you were to watch an old video and compare it to a recent one, the difference would be noticeale easily.</div>
+            <a href="https://www.youtube.com/c/Domics/videos">His Youtube channel</a>
+            <div class="rating">9/10</div>
+            
+         </div>
+      </div>
+      <div class="popUp">
+         <span class="close">&times;</span>
+         <div class="content">
+            <h2>Theodd1sout</h2>
+            <div class="desc">Robert James Rallison, known online as TheOdd1sOut, is an American YouTuber, cartoonist, animator, and author. He is known for producing storytime animations on his YouTube channel.</div>
+            <div class="opinion">Theodd1sout is the second animation Youtuber I ever started watching videos of. His work always puts a smile on my face because of its comical tone. The art in his videos got progressively more complex over the years. The shadows and colors are a lot more detailed and the animation is way more fluid. </div>
+            <a href="https://www.youtube.com/c/theodd1sout/videos">His Youtube channel</a>
+            <div class="rating">8/10</div>
+         </div>
+      </div>
+      <div class="popUp">
+         <span class="close">&times;</span>
+         <div class="content">
+            <h2>Jaiden Animations</h2>
+            <div class="desc">Jaiden Animations is the pseudonym of an American YouTuber and animator who is known for creating storytime videos and animations on her YouTube channel. Her videos explore a variety of topics, spanning from her experiences to personal stories.She also creates videos centered on video games.</div>
+            <div class="opinion">Jaiden's animations are based off of her real-life experiences. She does comedy, reviews and sometimes collabs. Her art is also simple but it got better overtime. The most apparent change she did is on her character that's more detailed and has more expressions then it use to have.</div>
+            <a href="https://www.youtube.com/c/jaiden">Her Youtube channel</a>
+            <div class="rating">8/10</div>
+         </div>
+      </div>
+
       <!-- MANGA ARTIST POPUPS -->
       <div class="popUp">
          <span class="close">&times;</span>
@@ -121,8 +155,43 @@
          </div>
       </div>
 
+      <!-- VIDEO GAME ARTISTS POPUUPS -->
+      <div class="popUp">
+         <span class="close">&times;</span>
+         <div class="content">
+            <h2>Devin Yang</h2>
+            <div class="desc">Devin Yang is a concept artist from the United States. He does character design, UI/UX, 2D animation and world building.</div>
+            <div class="opinion">His unique art style and his ability to adapt it to fit other ones is what I like the most about his work. The artwork shown here is a character in the game Valorant's art style that he developed as a side project.</div>
+            <a href="https://www.artstation.com/scribblecat">His ArtStation</a>
+            <a href="https://www.devinscribbles.com/">His portfolio</a>
+            <div class="rating">8/10</div>
+         </div>
+      </div>
+
+      <div class="popUp">
+         <span class="close">&times;</span>
+         <div class="content">
+            <h2>Pixune Studios</h2>
+            <div class="desc">Pixune is a stuido that specializes in character design, animation, UI/UX, backgrounds, weapons, vehicles and pixel art.</div>
+            <div class="opinion">All their different types of work come out looking good. They can adapt to any art style and their designs are always very unique. I like the fact that their work is so diverse. </div>
+            <a href="https://www.artstation.com/pixunegroup">Their ArtStation</a>
+            <a href="https://pixune.com/game-art/game-art-design/">Their portfolio</a>
+            <div class="rating">9/10</div>
+         </div>
+      </div>
+
+      <div class="popUp">
+         <span class="close">&times;</span>
+         <div class="content">
+            <h2>Ayhan Aydogan</h2>
+            <div class="desc">Ayhan is an artist based in Los Angeles. He does conceptual design, character design, texture work and props modeling. </div>
+            <div class="opinion">The image shown is part of the work he did for Riot Game's new game Ruined King. He made the different concepts for the environment. What I like the most about his projects is his texturing work. </div>
+            <a href="https://www.artstation.com/ayhanaydogan">His ArtStation</a>
+            <div class="rating">8/10</div>
+         </div>
+      </div>
       <!-- CARROUSSEL DIVISIONS -->
-      <section class="step1">
+      <section id="step1">
          <h2>How it started</h2>
          <p>I was first introduced to art through comics. As a kid, I went to the library every weekend to read and to
             borrow books. I would often borrow tons of french comics.</p>
@@ -143,7 +212,7 @@
 
          </div>
       </section>
-      <section class="step2">
+      <section id="step2">
          <h2>Youtube</h2>
          <p> As I grew a bit older, I started watching animators on Youtube. Most of them did small comical videos with
             simple drawings, which I really liked. The drawings were not super detailed, but somehow they always got
@@ -161,13 +230,13 @@
 
             <div class="gallery-cell"><img class="artworkImg" alt="jaiden animations"
                   src="https://static.tvtropes.org/pmwiki/pub/images/jaidenanimations_jaiden.jpg">
-               <h3>Jaiden animations</h3>
+               <h3>Jaiden Animations</h3>
             </div>
 
          </div>
       </section>
 
-      <section class="step3">
+      <section id="step3">
          <h2>Manga/ Manga style artists</h2>
          <p> A few more years pass and my taste in comics changed. I started reading japanese comics, also known as
             mangas. The transition from full-colored comics to black and white ones was definitely a bit strange at
@@ -193,25 +262,25 @@
 
          </div>
       </section>
-      <section class="step4">
+      <section id="step4">
          <h2>Video Games</h2>
          <p> Games have always been a part of my life growing up and they still are. I've had a GameBoy, N64, IBM computer, Nintendo DS, PSP, PS3, PC, and Nintendo Switch.
             All these platforms evolved over time and so did the art in them. I started looking into games and their art in high school. I then became interested in the making of them and decided to pursue a career in the game industry.
          </p>
          <div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
             <div class="gallery-cell"><img class="artworkImg" alt="domics"
-                  src="https://i.pinimg.com/236x/1b/0c/f5/1b0cf5ae5806112c345ffe59a347a193--domics-comics-boh.jpg">
-               <h3>Domics</h3>
+                  src="https://cdnb.artstation.com/p/assets/images/images/043/564/377/4k/ayhan-aydogan-artstation-2.jpg?1637639531" id="lvlImg">
+               <h3>Ayhan Aydogan</h3>
             </div>
 
             <div class="gallery-cell"><img class="artworkImg" alt="theodd1sout"
-                  src="https://pbs.twimg.com/profile_images/1176298544220622848/ZyiwB3Mx_400x400.jpg">
-               <h3>Theodd1sout</h3>
+                  src="https://cdnb.artstation.com/p/assets/images/images/029/271/225/4k/devin-yang-kaevalorantfinal.jpg?1597012715">
+               <h3>Devin Yang</h3>
             </div>
 
             <div class="gallery-cell"><img class="artworkImg" alt="jaiden animations"
-                  src="https://static.tvtropes.org/pmwiki/pub/images/jaidenanimations_jaiden.jpg">
-               <h3>Jaiden animations</h3>
+                  src="https://cdnb.artstation.com/p/assets/images/images/014/900/087/large/pixune-group-rhino-crash-201512.jpg?1546176822">
+               <h3>Pixune Studios</h3>
             </div>
 
          </div>

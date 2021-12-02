@@ -132,6 +132,7 @@ html{
             //MAIN CONTENT START
             .intro{
               margin:5% 15%;
+              font-size: 1.3em;
             }
 
             //POPUP
@@ -178,6 +179,9 @@ html{
                   a{
                     color:#BB86FC;
                   }
+                }
+                a{
+                  color:#BB86FC;
                 }
                 .opinion{
                   margin-left: 2%;
@@ -232,6 +236,9 @@ html{
                     filter: grayscale(100%);
                     transform: scale(0.7);
                   } 
+                  #lvlImg{
+                    object-fit: cover;
+                   }
                   h3{
                     margin-top: -40px;
                     &:hover{
@@ -277,12 +284,6 @@ html{
                 .flickity-prev-next-button.no-svg {
                   color: #2E2E2E;
                 }
-                // .lightboxAnim{
-                //   display:block;
-                //   position: absolute;
-                //   transform: scale(2);
-                //   // border-radius: 50%;
-                // }
               }
             }
         }

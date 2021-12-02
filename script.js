@@ -1,3 +1,9 @@
+//ALL the JavaScript code in this file is my own.
+
+//However I did take some inspiration online for the menu but i customized it:
+//https://codepen.io/ljc-dev/pen/zYoqbrN
+
+
 // MENU OPEN/CLOSE/CLICK
 const menuItems = document.querySelectorAll(".menuItem");
 const hamburger = document.querySelector(".hamburger");
@@ -7,16 +13,16 @@ const menuX = document.querySelector(".menuX");
 
 menuItems.forEach(menuItem => {
   //get each item in the menu (li) and chekc if one was clicked
-  menuItem.addEventListener("click", toggleHamburger);
+  menuItem.addEventListener("click", toggleMenu);
 })
 
 //add eventlisteners to the menu buttons and to the overlay thats greys out the backgorund
-hamburger.addEventListener("click", toggleHamburger);
-menuX.addEventListener("click", toggleHamburger);
-overlay.addEventListener("click", toggleHamburger);
+hamburger.addEventListener("click", toggleMenu);
+menuX.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);
 
 //toggles the menu opening and the overlay appearing on top of the background
-function toggleHamburger() {
+function toggleMenu() {
   overlay.classList.toggle("showOverlay");
   sideNav.classList.toggle("showNav");
 }
@@ -41,6 +47,8 @@ lbImgs.forEach(lbImg => {
 // }
 })
 
+//As for the caroussel, I used a library called flickity and customized it to fit my website's look. I also added a few functions to it that you will find below.
+
 //POPUP WITH ARTIST INFOS
 //everything here is my original code
 const popUps = document.querySelectorAll(".popUp");
@@ -60,7 +68,7 @@ names.forEach(name => {
     if (nameParent.classList.contains('is-selected')) {
 
       popUpNames.forEach(popUpName => {
-        //verify if what the user clicked on corresponds to one of the popUps
+        //verify if what the user clicked and if it corresponds to one of the popUps
         if (popUpName.innerHTML === evt.target.innerHTML) {
           let parent = popUpName.parentNode;
 
