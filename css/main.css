@@ -12,6 +12,10 @@ html {
     html body a, html body a:visited, html body a:active {
       color: inherit;
       text-decoration: none; }
+    html body footer {
+      color: #ABABAB; }
+      html body footer .author {
+        text-align: center; }
     html body #main {
       line-height: 2em;
       color: #ABABAB;
